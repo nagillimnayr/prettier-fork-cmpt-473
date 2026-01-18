@@ -139,6 +139,7 @@
     "@eslint/js": "9.39.2",
     "@stryker-mutator/core": "^9.4.0",
     "@stryker-mutator/jest-runner": "^9.4.0",
+    "@stryker-mutator/typescript-checker": "^9.4.0",
     "@stylistic/eslint-plugin": "5.7.0",
     "@types/jsesc": "3.0.3",
     "@typescript-eslint/eslint-plugin": "8.53.0",

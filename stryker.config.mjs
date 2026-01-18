@@ -9,6 +9,21 @@ const config = {
   testRunner_comment:
     "Take a look at https://stryker-mutator.io/docs/stryker-js/jest-runner for information about the jest plugin.",
   coverageAnalysis: "perTest",
-  mutate: ["src/**/*.js"]
+  checkers: ["typescript"],
+  tsconfigFile: "tsconfig.json",
+  typescriptChecker: {
+    prioritizePerformanceOverAccuracy: true,
+  },
+  mutate: ["src/**/*.{js,ts,cjs,mjs}", "!src/**/*.d.ts"],
+  mutator: {
+    excludedMutations: ["StringLiteral"],
+  },
+  disableTypeChecks:
+    "{test/**/*.{test,spec}.{js,ts,cjs,mjs},src/**/*.{js,ts,cjs,mjs}}",
+  testRunnerNodeArgs: ["--experimental-vm-modules"],
+  jest: {
+    projectType: "custom",
+    configFile: "jest.config.js",
+  },
 };
 export default config;
