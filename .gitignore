@@ -43,3 +43,4 @@ package-lock.json
 
 # stryker temp files
 .stryker-tmp
+stryker-tmp
