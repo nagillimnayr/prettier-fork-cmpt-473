@@ -35,10 +35,16 @@ const config = {
     projectType: "custom",
     configFile: "jest.config.js",
     config: {
+      // testEnvironment: "@stryker-mutator/jest-runner/jest-env/node",
+      // collectCoverage: true,
+      // coverageDirectory: "coverage/",
+      // collectCoverageFrom: ["src/**/*.{js,jsx,ts,tsx}", "!src/**/*.d.ts"],
       testPathIgnorePatterns: [
+        "/tests/dts/",
+        "/tests/config/",
+        "/tests/format/",
         "/tests/integration/",
       ],
-
     },
   },
 };

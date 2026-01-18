@@ -198,6 +198,8 @@
     "trim": "1.0.1"
   },
   "scripts": {
+    "stryker": "stryker run",
+    "stryker:debug": "stryker run --fileLogLevel trace --logLevel debug",
     "prepublishOnly": "echo \"Error: must publish from dist/\" && exit 1",
     "test": "jest",
     "test:node14": "cross-env NODE_OPTIONS=\"--experimental-loader=$PWD/scripts/nodejs-14-test-loader.js --no-warnings=ExperimentalWarning\" jest --runInBand",
