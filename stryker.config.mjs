@@ -24,10 +24,11 @@ const config = {
     // "!src/**/*.d.ts",
     "src/document/printer/printer.js",
   ],
-
   mutator: {
     excludedMutations: ["StringLiteral"],
   },
+  timeoutFactor: 2,
+  timeoutMS: 3 * 60 * 1000,
   disableTypeChecks:
     "{test/**/*.{test,spec}.{js,ts,cjs,mjs},src/**/*.{js,ts,cjs,mjs}}",
   testRunnerNodeArgs: ["--experimental-vm-modules"],
@@ -36,9 +37,8 @@ const config = {
     configFile: "jest.config.js",
     config: {
       testPathIgnorePatterns: [
-        "/tests/integration/",
+        // "/tests/integration/"
       ],
-
     },
   },
 };
