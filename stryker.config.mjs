@@ -27,7 +27,11 @@ const config = {
   concurrency: 6,
   mutate: [
     // "src/**/*.{js,ts,cjs,mjs}",
-    "src/document/printer/printer.js",
+    // "src/document/printer/printer.js",
+    "src/main/normalize-options.js",
+    // "src/main/syntax-transformer.js",
+    // "src/main/whitespace-utilities.js",
+    // "src/main/ast-path.js",
     // "src/document/printer/printer.js",
     // "src/document/builders/align.js",
     // "src/main/range.js",
