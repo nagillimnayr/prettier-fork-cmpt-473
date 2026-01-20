@@ -23,10 +23,15 @@ const config = {
     // "src/**/*.{js,ts,cjs,mjs}",
     // "!src/**/*.d.ts",
     "src/document/printer/printer.js",
+    // "src/document/printer/printer.js",
   ],
   mutator: {
-    excludedMutations: ["StringLiteral"],
+    excludedMutations: [
+      // "StringLiteral"
+      "BlockStatement",
+    ],
   },
+  htmlReporter: {fileName: 'reports/mutation/mutation-printer-unit.html'},
   timeoutFactor: 2,
   timeoutMS: 3 * 60 * 1000,
   disableTypeChecks:
@@ -37,7 +42,7 @@ const config = {
     configFile: "jest.config.js",
     config: {
       testPathIgnorePatterns: [
-        // "/tests/integration/"
+        "/tests/integration/"
       ],
     },
   },
