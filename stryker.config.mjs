@@ -39,7 +39,10 @@ const config = {
   ],
 
   mutator: {
-    excludedMutations: ["StringLiteral"],
+    excludedMutations: [
+      // "StringLiteral",
+      "BlockStatement",
+    ],
   },
   disableTypeChecks:
     "{test/**/*.{test,spec}.{js,ts,cjs,mjs},src/**/*.{js,ts,cjs,mjs}}",

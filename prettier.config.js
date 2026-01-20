@@ -13,7 +13,8 @@ const config = {
     {
       files: ["bin/prettier.cjs"],
       options: {
-        trailingComma: "none",
+        trailingComma: "ES5",
+        singleQuote: true,
       },
     },
     {
